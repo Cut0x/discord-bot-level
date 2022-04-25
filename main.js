@@ -26,7 +26,7 @@ client.slashCommands = new Collection();
 
 client.db = require("quick.db");
 
-["event_handler", "slash_handler"].forEach((handler) => {
+["H-Events", "H-Slash"].forEach((handler) => {
     require(`./Handlers/${handler}`)(client)
 });
 
